@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventHandlingExerciseComponent implements OnInit {
   keys: string[] | undefined;
-  
+
   constructor() {}
 
   ngOnInit(): void {}
@@ -15,13 +15,12 @@ export class EventHandlingExerciseComponent implements OnInit {
   onClick() {
     alert('Clicked');
   }
-
-  onKey(event: { key: any; }){
-    this.keys.push(event.key)
-    alert(this.keys)
-    alert(keys.length)
-    if (keys.length === 5){
-      alert(keys[-1])
+  tracker = 0;
+  onKey(event: { key: any }) {
+    let key = event.key;
+    this.tracker++;
+    if(this.tracker>=5){
+      alert(key)
     }
   }
 }
