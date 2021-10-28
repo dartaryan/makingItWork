@@ -9,6 +9,7 @@ import { BlueComponent } from './blue/blue.component';
 import { EventHandlingExerciseComponent } from './event-handling-exercise/event-handling-exercise.component';
 import { GreetingComponent } from './greeting/greeting.component';
 import { CarComponent } from './car/car.component';
+import { PrintTextComponent } from './print-text/print-text.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CarComponent } from './car/car.component';
     BlueComponent,
     EventHandlingExerciseComponent,
     GreetingComponent,
-    CarComponent
+    CarComponent,
+    PrintTextComponent
   ],
   imports: [
     BrowserModule,
