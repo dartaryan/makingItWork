@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
 import { RedComponent } from './red/red.component';
 import { BlueComponent } from './blue/blue.component';
+import { EventHandlingExerciseComponent } from './event-handling-exercise/event-handling-exercise.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
     RedComponent,
-    BlueComponent
+    BlueComponent,
+    EventHandlingExerciseComponent
   ],
   imports: [
     BrowserModule,
