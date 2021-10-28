@@ -7,6 +7,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { RedComponent } from './red/red.component';
 import { BlueComponent } from './blue/blue.component';
 import { EventHandlingExerciseComponent } from './event-handling-exercise/event-handling-exercise.component';
+import { GreetingComponent } from './greeting/greeting.component';
+import { CarComponent } from './car/car.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { EventHandlingExerciseComponent } from './event-handling-exercise/event-
     ProfileComponent,
     RedComponent,
     BlueComponent,
-    EventHandlingExerciseComponent
+    EventHandlingExerciseComponent,
+    GreetingComponent,
+    CarComponent
   ],
   imports: [
     BrowserModule,
