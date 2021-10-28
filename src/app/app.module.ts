@@ -10,6 +10,8 @@ import { EventHandlingExerciseComponent } from './event-handling-exercise/event-
 import { GreetingComponent } from './greeting/greeting.component';
 import { CarComponent } from './car/car.component';
 import { PrintTextComponent } from './print-text/print-text.component';
+import { DownloadsComponent } from './downloads/downloads.component';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { PrintTextComponent } from './print-text/print-text.component';
     EventHandlingExerciseComponent,
     GreetingComponent,
     CarComponent,
-    PrintTextComponent
+    PrintTextComponent,
+    DownloadsComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
