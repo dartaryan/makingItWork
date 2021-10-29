@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CarComponent } from './car/car.component';
-
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +8,7 @@ import { CarComponent } from './car/car.component';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+  constructor(private router: Router) {}
   myMessage = 'C++';
 
   angularClick() {
@@ -20,14 +21,24 @@ export class AppComponent {
     this.myMessage = 'Javascript!!';
   }
 
-  onReciveMessage(event: string){
-    let message = event
-    this.myMessage = message
+  onReciveMessage(event: string) {
+    let message = event;
+    this.myMessage = message;
   }
 
-  onInfoReceived(event: { price: any; brand: any; }){
-    let price = event.price
-    let brand = event.brand
-    alert(`Price: ${price}, Brand: ${brand}`)
+  onInfoReceived(event: { price: any; brand: any }) {
+    let price = event.price;
+    let brand = event.brand;
+    alert(`Price: ${price}, Brand: ${brand}`);
+  }
+
+  button1() {
+    this.router.navigate(['articles']);
+  }
+  button2() {
+    this.router.navigate(['articles/today']);
+  }
+  button3() {
+    this.router.navigate(['articles/today/noon']);
   }
 }

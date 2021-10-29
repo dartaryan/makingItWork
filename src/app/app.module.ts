@@ -12,6 +12,12 @@ import { CarComponent } from './car/car.component';
 import { PrintTextComponent } from './print-text/print-text.component';
 import { DownloadsComponent } from './downloads/downloads.component';
 import { ErrorComponent } from './error/error.component';
+import { Page1Component } from './page1/page1.component';
+import { Page2Component } from './page2/page2.component';
+import { Page3Component } from './page3/page3.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button';
+
 
 @NgModule({
   declarations: [
@@ -24,11 +30,16 @@ import { ErrorComponent } from './error/error.component';
     CarComponent,
     PrintTextComponent,
     DownloadsComponent,
-    ErrorComponent
+    ErrorComponent,
+    Page1Component,
+    Page2Component,
+    Page3Component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
