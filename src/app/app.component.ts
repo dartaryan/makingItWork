@@ -11,16 +11,23 @@ export class AppComponent {
   greenText = 'green-text';
 
   myStyles = { 'large-text': false, highlight: false, 'green-text': false };
+  expression: string =''
+
   constructor() {}
 
   size() {
     this.myStyles['large-text'] = this.myStyles['large-text'] ? false : true;
+    this.expression = 'largetext'
   }
   background() {
     this.myStyles['highlight'] = this.myStyles['highlight'] ? false : true;
+    this.expression = 'highlight'
   }
 
   color() {
     this.myStyles['green-text'] = this.myStyles['green-text'] ? false : true;
+    this.expression = 'greentext'
   }
+
+
 }

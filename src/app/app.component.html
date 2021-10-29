@@ -1,6 +1,14 @@
-<div *ngIf="true">
+<div>
   <p [ngClass]="myStyles">Hello world</p>
   <button (click)="size()">change size</button>
   <button (click)="background()">change background</button>
   <button (click)="color()">change color</button>
+</div>
+
+
+<div [ngSwitch]="expression">
+    <div *ngSwitchCase="'largetext'">Different size text!</div>
+    <div *ngSwitchCase="'highlight'">Highlight text!</div>
+    <div *ngSwitchCase="'greentext'">Greentext text!</div> 
+    <div *ngSwitchDefault="'greentext'">Waiting for you to press...</div> 
 </div>
