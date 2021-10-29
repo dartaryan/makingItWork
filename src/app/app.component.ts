@@ -11,23 +11,25 @@ export class AppComponent {
   greenText = 'green-text';
 
   myStyles = { 'large-text': false, highlight: false, 'green-text': false };
-  expression: string =''
-
+  expression: string = '';
+  articles = [
+    { title: 'today', description: 'friday', color:"orange"},
+    { title: 'tomorrow', description: 'saturday', color:"lightgreen" },
+    { title: 'yesterday', description: 'thursday',  color:"lightblue"},
+  ];
   constructor() {}
 
   size() {
     this.myStyles['large-text'] = this.myStyles['large-text'] ? false : true;
-    this.expression = 'largetext'
+    this.expression = 'largetext';
   }
   background() {
     this.myStyles['highlight'] = this.myStyles['highlight'] ? false : true;
-    this.expression = 'highlight'
+    this.expression = 'highlight';
   }
 
   color() {
     this.myStyles['green-text'] = this.myStyles['green-text'] ? false : true;
-    this.expression = 'greentext'
+    this.expression = 'greentext';
   }
-
-
 }

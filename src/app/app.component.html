@@ -12,3 +12,9 @@
     <div *ngSwitchCase="'greentext'">Greentext text!</div> 
     <div *ngSwitchDefault="'greentext'">Waiting for you to press...</div> 
 </div>
+
+<div *ngFor="let article of articles; index as i">
+  <h1 [style.color]="article.color">{{i+1}}  {{article.title}}</h1>
+  <h3 >{{article.description}}</h3>
+  
+</div>
