@@ -16,10 +16,11 @@ import { Page1Component } from './page1/page1.component';
 import { Page2Component } from './page2/page2.component';
 import { Page3Component } from './page3/page3.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatButtonModule} from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
 import { CustomAttributeDirective } from './custom-attribute.directive';
 import { RoutingExampleComponent } from './routing-example/routing-example.component';
 import { MultiplyPipe } from './multiply.pipe';
+import { MatCardContent, MatCardModule } from '@angular/material/card';
 
 
 @NgModule({
@@ -39,15 +40,20 @@ import { MultiplyPipe } from './multiply.pipe';
     Page3Component,
     CustomAttributeDirective,
     RoutingExampleComponent,
-    MultiplyPipe
+    MultiplyPipe,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    
+    MatCardModule,
+    
+   
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

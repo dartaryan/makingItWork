@@ -10,6 +10,8 @@
 </div>
 
 
+
+
 <div [ngSwitch]="expression">
     <div *ngSwitchCase="'largetext'">Different size text!</div>
     <div *ngSwitchCase="'highlight'">Highlight text!</div>
@@ -22,3 +24,15 @@
   <h3 >{{article.description}}</h3>
   <h4>{{article.theNumber | multiply: i | number }}</h4>
 </div>
+
+
+<mat-card>
+  <mat-card-title>Simple Card Example</mat-card-title>
+  <mat-card-content>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+
+    </p>
+  </mat-card-content>
+</mat-card>
