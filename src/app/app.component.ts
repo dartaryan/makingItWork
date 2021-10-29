@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { CarComponent } from './car/car.component';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,37 +6,21 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  constructor(private router: Router) {}
-  myMessage = 'C++';
+  largeText = 'large-text';
+  highlightText = 'highlight';
+  greenText = 'green-text';
 
-  angularClick() {
-    this.myMessage = 'Angular';
-  }
-  pythonClick() {
-    this.myMessage = 'Python!';
-  }
-  javascriptClick() {
-    this.myMessage = 'Javascript!!';
-  }
+  myStyles = { 'large-text': false, highlight: false, 'green-text': false };
+  constructor() {}
 
-  onReciveMessage(event: string) {
-    let message = event;
-    this.myMessage = message;
+  size() {
+    this.myStyles['large-text'] = this.myStyles['large-text'] ? false : true;
+  }
+  background() {
+    this.myStyles['highlight'] = this.myStyles['highlight'] ? false : true;
   }
 
-  onInfoReceived(event: { price: any; brand: any }) {
-    let price = event.price;
-    let brand = event.brand;
-    alert(`Price: ${price}, Brand: ${brand}`);
-  }
-
-  button1() {
-    this.router.navigate(['articles']);
-  }
-  button2() {
-    this.router.navigate(['articles/today']);
-  }
-  button3() {
-    this.router.navigate(['articles/today/noon']);
+  color() {
+    this.myStyles['green-text'] = this.myStyles['green-text'] ? false : true;
   }
 }
