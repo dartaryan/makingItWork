@@ -19,6 +19,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import { CustomAttributeDirective } from './custom-attribute.directive';
 import { RoutingExampleComponent } from './routing-example/routing-example.component';
+import { MultiplyPipe } from './multiply.pipe';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { RoutingExampleComponent } from './routing-example/routing-example.compo
     Page2Component,
     Page3Component,
     CustomAttributeDirective,
-    RoutingExampleComponent
+    RoutingExampleComponent,
+    MultiplyPipe
   ],
   imports: [
     BrowserModule,

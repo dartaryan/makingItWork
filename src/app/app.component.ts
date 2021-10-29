@@ -14,9 +14,9 @@ export class AppComponent {
   myStyles = { 'large-text': false, highlight: false, 'green-text': false };
   expression: string = '';
   articles = [
-    { title: 'today', description: 'friday', color:"orange"},
-    { title: 'tomorrow', description: 'saturday', color:"lightgreen" },
-    { title: 'yesterday', description: 'thursday',  color:"lightblue"},
+    { title: 'today', description: 'friday', color:"orange",theNumber:1000000},
+    { title: 'tomorrow', description: 'saturday', color:"lightgreen",theNumber:1300000 },
+    { title: 'yesterday', description: 'thursday',  color:"lightblue",theNumber:1204000},
   ];
   constructor(private router: Router) {}
 
