@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -17,8 +18,12 @@ export class AppComponent {
     { title: 'tomorrow', description: 'saturday', color:"lightgreen" },
     { title: 'yesterday', description: 'thursday',  color:"lightblue"},
   ];
-  constructor() {}
+  constructor(private router: Router) {}
 
+
+    options(){
+      this.router.navigate(['exampleRoute','Boots',{age: 23,gender: 'Chipidi'}])
+    }
   size() {
     this.myStyles['large-text'] = this.myStyles['large-text'] ? false : true;
     this.expression = 'largetext';
